@@ -1,0 +1,114 @@
+.services-post {
+  padding: 100px 0;
+  @include _respond-to(767) {
+    padding: 60px 0;
+  }
+  &-container {
+    padding-top: 80px;
+    @include _respond-to(767) {
+      flex-direction: column-reverse;
+    }
+   }
+  &-details {
+    padding-left: 60px;
+    border-left: 2px solid $green;
+    @include _respond-to(767) {
+      margin-top: 30px;
+      border-left: none;
+      padding-left: 0;
+    }
+    &-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 10px;
+      @include _respond-to(480) {
+        margin-bottom: 5px;
+      }
+    }
+    &-val {
+      font-weight: 500;
+    }
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $dark;
+    margin-bottom: 20px;
+    font-size: 16px;
+    @include _respond-to(480) {
+      flex-direction: column;
+    }
+    p {
+      margin: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &-ml-col {
+    width: 50%;
+    @include _respond-to(480) {
+      width: 100%;
+      &:last-child {
+        margin-top: 15px;
+      }
+    }
+  }
+  &-lg-col {
+    width: 100%;
+  }
+  &-text {
+    padding-top: 60px;
+  }
+  &-img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 26px;
+  }
+  &-position {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &-phones {
+    a {
+      display: block;
+      color: $green;
+      font-weight: 600;
+      transition: .3s ease-in-out;
+      &:hover {
+        color: $green-hover;
+      }
+    }
+  }
+  &-emails {
+    a {
+      display: block;
+      color: $green;
+      font-weight: 600;
+      transition: .3s ease-in-out;
+      &:hover {
+        color: $green-hover;
+      }
+    }
+  }
+  &-eml_doc {
+    margin-top: 40px;
+    border: 1px solid $green;
+    border-radius: 8px;
+    overflow: hidden;
+    @include _respond-to(767) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  &-emp {
+    @include _respond-to(767) {
+      margin-bottom: 30px;
+    }
+  }
+}

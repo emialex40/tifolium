@@ -1,0 +1,10 @@
+/node_modules
+/.idea
+/wp-admin
+/wp-includes
+**/img
+
+.gitignore
+package-lock.json
+wp-config.php
+.DS_Store

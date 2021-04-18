@@ -1,0 +1,26 @@
+@import "_mixins/settings";
+@import "_mixins/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+/* bootstrap styles */
+@import "_libs/_bootstrap/bootstrap-grid";
+/* defualt styles */
+@import "_default/default";
+/* humburger styles */
+@import "_default/hamburger";
+/* all styles */
+@import "_default/header";
+@import "_default/menu";
+@import "_default/mobmenu";
+
+
+/* pages */
+@import "_includes/home";
+@import "_includes/services";
+@import "_includes/servicws_single";
+@import "_includes/services_cats";
+@import "_includes/faq";
+@import "_includes/blog";
+@import "_includes/contacts";
+@import "_includes/reviews";
+
+@import "_default/footer";

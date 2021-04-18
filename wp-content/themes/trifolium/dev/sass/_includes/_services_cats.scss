@@ -1,0 +1,40 @@
+.services_cat {
+  padding: 130px 0;
+  @include _respond-to(768) {
+    padding: 60px 0;
+  }
+  &-content {
+    padding-top: 60px;
+    @include _respond-to(991) {
+      flex-direction: column-reverse;
+    }
+  }
+  &-img {
+    width: 100%;
+    height: auto;
+  }
+  &-text {
+    padding-top: 50px;
+  }
+  &-wrapper {
+    padding-left: 20px;
+    border-left: 1px solid $green;
+    @include _respond-to(991) {
+      margin-bottom: 30px;
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-posts {
+    font-weight: 500;
+    text-transform: none;
+    padding-bottom: 10px;
+    font-size: 22px;
+    @include _respond-to(480) {
+      font-size: 18px;
+    }
+  }
+}

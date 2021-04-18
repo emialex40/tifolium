@@ -1,0 +1,27 @@
+/* color */
+$white: #ffffff !default;
+$black: #000000 !default;
+$red: #F1244E !default;
+$dark: #333333 !default;
+$green: #05b086 !default;
+$green-hover: #8be0cb !default;
+$blue: #0044b2 !default;
+$blue-hover: #4e82d6 !default;
+$base-color: $white  !default;
+$grey-light: #EFEFEF !default;
+$grey: #c9c9c9 !default;
+
+/* font-family */
+$font: 'Montserrat', sans-serif !default;
+
+/* mobile menu sittings */
+$mob_menu_bg: $white;
+
+
+/* humburger sittings */
+$hamburger-inner-bg: $dark;
+$humburger-hover: $dark;
+
+$mob-menu-bg-overlay: $black;
+$mob-menu-bg-opacity: .8;
+	

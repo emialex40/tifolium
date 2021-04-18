@@ -1,0 +1,50 @@
+.footer {
+    &_home{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        .footer_wrapper {
+            border-top: none;
+        }
+    }
+    &_wrapper {
+        border-top: 1px solid $grey;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @include _respond-to(480) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+   &_social {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 70px;
+       @include _respond-to(480) {
+           margin-top: 10px;
+       }
+       &_icon {
+           display: block;
+           width: 30px;
+           height: 30px;
+           background: $green;
+           border: 1px solid $green;
+           border-radius: 50%;
+           color: $white;
+           text-align: center;
+           line-height: 30px;
+           box-sizing: border-box;
+           transition: .3s ease-in-out;
+           &:hover {
+               background: $white;
+               color: $green;
+           }
+       }
+   }
+}

@@ -1,0 +1,21 @@
+.reviews {
+  padding: 130px 0;
+  @include _respond-to(768) {
+    padding: 60px 0;
+  }
+  &-wrapper {
+    margin-top: 60px;
+  }
+  &-date {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $green;
+  }
+  &-text {
+    padding: 20px;
+    border: 1px solid $green;
+    border-radius: 5px;
+    margin: 20px 0 40px;
+  }
+}

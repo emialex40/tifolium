@@ -1,0 +1,39 @@
+.front {
+    z-index: 0;
+    .container, .row {
+        height: 100%;
+    }
+    &_home {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &_wrapper {
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    &_icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 380px;
+        margin-bottom: 100px;
+    }
+    &_icon {
+        width: 100px;
+        height: 100px;
+        @include _respond-to(480) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .search {
+        label {
+            display: none;
+        }
+    }
+}
