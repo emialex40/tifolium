@@ -65,6 +65,13 @@ $children2 = true_get_nav_menu_children_items(19, $menu, 0);
 </script>
 
 
+<div id="modal-form" class="modal-form" style="display: none;">
+    <div class="modal-form-header">
+        <h3><?php the_field('zagolovok_form', 'option'); ?></h3>
+    </div>
+    <?php echo do_shortcode('' . get_field('modal_form', 'option') . '') ?>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 

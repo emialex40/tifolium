@@ -62,6 +62,10 @@ get_header();
                     <article class="content services-post-text">
                         <?php the_field('src_content'); ?>
                     </article>
+                    <div class="services-post-button">
+                        <a data-fancybox data-src="#modal-form" class="services-post-btn" href="javascript:;"><?php the_field('zakazat', 'option');
+                            ?></a>
+                    </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="services-post-emp">
@@ -86,7 +90,8 @@ get_header();
                         <?php if ($phones) : ?>
                             <div class="services-post-phones">
                                 <?php foreach ($phones as $phone) : ?>
-                                    <a href="<?php echo phone_format($phone['src_add_phone']); ?>" class="services-post-contacts"><?php echo $phone['src_add_phone']; ?></a>
+                                    <a href="<?php echo phone_format($phone['src_add_phone']); ?>"
+                                       class="services-post-contacts"><?php echo $phone['src_add_phone']; ?></a>
                                 <?php endforeach; ?>
                             </div>
                         <?php endif; ?>
@@ -94,22 +99,23 @@ get_header();
                         <?php if ($mails) : ?>
                             <div class="services-post-emails">
                                 <?php foreach ($mails as $mail) : ?>
-                                    <a href="mailto:<?php echo $mail['src_add_email']; ?>" class="services-post-contacts"><?php echo $mail['src_add_email']; ?></a>
+                                    <a href="mailto:<?php echo $mail['src_add_email']; ?>"
+                                       class="services-post-contacts"><?php echo $mail['src_add_email']; ?></a>
                                 <?php endforeach; ?>
                             </div>
                         <?php endif; ?>
                     </div>
                     <?php if (get_field('src_doc')) : ?>
-                    <div class="services-post-eml_doc">
-                        <?php
-                        $doc_arr = get_field('src_doc');
-                        $doc = $doc_arr['url'];
-                        $alt = ($doc_arr['alt']) ? $doc_arr['alt'] : 'Document';
-                        ?>
-                        <a data-fancybox href="<?php echo $doc; ?>">
-                            <img src="<?php echo $doc; ?>" alt="<?php echo $alt; ?>">
-                        </a>
-                    </div>
+                        <div class="services-post-eml_doc">
+                            <?php
+                            $doc_arr = get_field('src_doc');
+                            $doc = $doc_arr['url'];
+                            $alt = ($doc_arr['alt']) ? $doc_arr['alt'] : 'Document';
+                            ?>
+                            <a data-fancybox href="<?php echo $doc; ?>">
+                                <img src="<?php echo $doc; ?>" alt="<?php echo $alt; ?>">
+                            </a>
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
