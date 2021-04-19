@@ -25,8 +25,12 @@ $people = get_field('sotrudnyky');
                         <a href="mailto:<?php the_field('e-mail', 'option'); ?>"
                            class="contacts-info-item contacts-mail"><i
                                     class="far fa-envelope"></i> <?php the_field('e-mail', 'option'); ?></a>
-                        <div class="contacts-info-item contacts-address"><i class="fas fa-home"></i>
-                            <span><?php the_field('adres', 'option'); ?></span></div>
+                        <?php if (get_field('adres', 'option')) : ?>
+                            <div class="contacts-info-item contacts-address">
+                                <i class="fas fa-home"></i>
+                                <span><?php the_field('adres', 'option'); ?></span>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">

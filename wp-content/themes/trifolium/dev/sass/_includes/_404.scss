@@ -1,0 +1,28 @@
+.not_found {
+  padding: 100px 0;
+  &_center {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      color: $green;
+      text-align: center;
+    }
+    a {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &_main {
+    font-size: 150px;
+    font-weight: 700;
+    color: $blue;
+    text-align: center;
+  }
+}

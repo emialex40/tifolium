@@ -1,5 +1,7 @@
 <?php 
-get_header(); 
+get_header();
+?>
+<?php
 	if ( have_posts() ) : 
 		if ( !is_front_page() && is_home() ) { 
 			get_template_part( 'content', 'blog' ); 
@@ -8,6 +10,8 @@ get_header();
 		{
 			the_content(); 		
 		}
-	endif; 
+	endif;
+		?>
+<?php
 get_footer();			   
  ?>

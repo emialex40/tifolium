@@ -477,6 +477,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
       text-decoration: underline;
     }
   }
+  img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 #lang_switcher {
@@ -507,7 +512,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
         font-size: 12px;
         font-weight: 600;
         color: $green;
-        margin-right: 2px;
       }
     }
   }

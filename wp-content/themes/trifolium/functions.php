@@ -279,7 +279,7 @@ function create_post_type()
         'description' => $description,
         'supports' => array('title', 'editor', 'thumbnail'),
         'rewrite' => array(
-            'slug' => apply_filters('inspiry_property_slug', 'service'),
+            'slug' => apply_filters('inspiry_property_slug', 'uslugi'),
         ),
     );
     register_post_type('service', $post_type_args);
@@ -337,7 +337,7 @@ function create_post_type()
         'description' => $description,
         'supports' => array('title', 'editor', 'thumbnail'),
         'rewrite' => array(
-            'slug' => apply_filters('qustions', 'service'),
+            'slug' => apply_filters('inspiry_property_slug', 'qustions'),
         ),
     );
     register_post_type('qustions', $post_type_args);
