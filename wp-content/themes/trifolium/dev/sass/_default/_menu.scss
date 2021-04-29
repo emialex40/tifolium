@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   height: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   li {
     padding-left: 10px;
     padding-right: 10px;
@@ -71,9 +71,6 @@
       }
     }
 
-    &.current-menu-item, &.current-menu-parent {
-    }
-
     &.menu-item-has-children {
       > .items {
         padding-right: 30px;
@@ -88,22 +85,25 @@
       width: 100%;
       padding: 0 0 0 0;
       font-size: 14px;
-
+      .current-menu-item, .current-menu-parent {
+        .items {
+          a {
+            color: $blue;
+          }
+        }
+      }
       a {
         text-transform: uppercase;
         color: $purple;
       }
-
       span {
         display: none;
       }
-
       .items {
         &:hover, &:focus {
           color: $blue-hover;
         }
       }
-
       &.current-menu-item, &.current-menu-parent {
         ul {
           li {

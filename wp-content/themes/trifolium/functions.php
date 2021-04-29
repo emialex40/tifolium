@@ -429,3 +429,18 @@ add_filter('excerpt_length', function () {
 add_filter('excerpt_more', function ($more) {
     return '  ......';
 });
+
+//This function prints the JavaScript to the footer
+add_action( 'wp_footer', 'redirect_cf7' );
+
+function redirect_cf7() {
+    ?>
+    <script type="text/javascript">
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            location = '<?php echo get_home_url(); ?>/thank-you/';
+        }, false );
+    </script>
+    <?php
+}
+
+
